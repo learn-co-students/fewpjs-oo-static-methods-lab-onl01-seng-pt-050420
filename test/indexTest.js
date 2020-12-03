@@ -39,7 +39,7 @@ describe( "Formatter", () => {
 
     it( "always capitalizes the first word", () => {
       expect( Formatter.titleize( "a tale of two cities" ) ).to.equal( "A Tale of Two Cities" )
-      /xpect( Formatter.titleize( "in the night kitchen" ) ).to.equal( "In the Night Kitchen" )
+      expect( Formatter.titleize( "in the night kitchen" ) ).to.equal( "In the Night Kitchen" )
     } )
   } )
 } )
