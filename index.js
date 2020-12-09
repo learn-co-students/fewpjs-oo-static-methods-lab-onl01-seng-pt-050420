@@ -6,6 +6,8 @@ class Formatter {
   static sanitize(string){
     let regex = /^[a-z0-9]+$/i
     return string.split("").filter(char => regex.test(char) || char === "-" || char === "'" || char === " ").join("")
+    
+    // return string.replace( /[^A-Za-z0-9 '-]/g, '' )
   }
 
   static titleize(string){
