@@ -14,7 +14,7 @@ class Formatter {
     return string.split(" ").map((element, index) => {
 
       if (index === 0 || !wordArr.includes(element)){
-        return element[0].toUpperCase() + element.slice(1)
+        return this.capitalize(element)
       } else {
         return element
       }
